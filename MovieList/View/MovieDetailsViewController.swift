@@ -61,16 +61,11 @@ class MovieDetailsViewController: UIViewController {
         self.movie = movie
         super.init(nibName: nil, bundle: nil)
         guard let imageURL = movie.image else { return }
-        configureImage(imageURL)
+        imagePoster.configureImage(imageURL)
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
-    }
-    
-    private func configureImage(_ imageURL: String) {
-        let url = URL(string: "https://image.tmdb.org/t/p/w500\(imageURL)")
-        imagePoster.kf.setImage(with: url)
     }
     
     private func setLayout() {
