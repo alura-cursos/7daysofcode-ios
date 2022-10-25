@@ -18,7 +18,7 @@
 		48FC69B32907964A00BD0CB8 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FC69B22907964A00BD0CB8 /* MovieTableViewCell.swift */; };
 		48FC69B5290796C000BD0CB8 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FC69B4290796C000BD0CB8 /* String+.swift */; };
 		48FC69B8290797C600BD0CB8 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FC69B7290797C600BD0CB8 /* Network.swift */; };
-		48FC69BB2907983700BD0CB8 /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48FC69BA2907983700BD0CB8 /* Property List.plist */; };
+		48FC69BB2907983700BD0CB8 /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48FC69BA2907983700BD0CB8 /* Keys.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +35,7 @@
 		48FC69B22907964A00BD0CB8 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 		48FC69B4290796C000BD0CB8 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
 		48FC69B7290797C600BD0CB8 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
-		48FC69BA2907983700BD0CB8 /* Property List.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Property List.plist"; sourceTree = "<group>"; };
+		48FC69BA2907983700BD0CB8 /* Keys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +78,7 @@
 				48FC699D290793BA00BD0CB8 /* Assets.xcassets */,
 				48FC699F290793BA00BD0CB8 /* LaunchScreen.storyboard */,
 				48FC69A2290793BA00BD0CB8 /* Info.plist */,
-				48FC69BA2907983700BD0CB8 /* Property List.plist */,
+				48FC69BA2907983700BD0CB8 /* Keys.plist */,
 			);
 			path = MovieList;
 			sourceTree = "<group>";
@@ -183,7 +183,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48FC69BB2907983700BD0CB8 /* Property List.plist in Resources */,
+				48FC69BB2907983700BD0CB8 /* Keys.plist in Resources */,
 				48FC69A1290793BA00BD0CB8 /* LaunchScreen.storyboard in Resources */,
 				48FC699E290793BA00BD0CB8 /* Assets.xcassets in Resources */,
 			);
