@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class MovieTableViewCell: UITableViewCell {
     
@@ -72,10 +73,17 @@ class MovieTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
+    private func configureImage(_ imageURL: String) {
+        let url = URL(string: "https://image.tmdb.org/t/p/w500\(imageURL)")
+        imagePoster.kf.setImage(with: url)
+    }
+    
     func configureCell(movie: Movie) {
         setConstraints()
         titleLabel.text = movie.title
         releaseDateLabel.text = "Lançamento: \(movie.releaseDate.formatDate())"
+        guard let imageURL = movie.image else { return }
+        configureImage(imageURL)
     }
     
     private func setLayout() {
