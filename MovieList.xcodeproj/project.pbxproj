@@ -15,6 +15,8 @@
 		48FC69AA290794ED00BD0CB8 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FC69A9290794ED00BD0CB8 /* UIColor+.swift */; };
 		48FC69AC2907950900BD0CB8 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FC69AB2907950900BD0CB8 /* UIView+.swift */; };
 		48FC69AF2907957400BD0CB8 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FC69AE2907957400BD0CB8 /* Movie.swift */; };
+		48FC69B32907964A00BD0CB8 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FC69B22907964A00BD0CB8 /* MovieTableViewCell.swift */; };
+		48FC69B5290796C000BD0CB8 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FC69B4290796C000BD0CB8 /* String+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		48FC69A9290794ED00BD0CB8 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		48FC69AB2907950900BD0CB8 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		48FC69AE2907957400BD0CB8 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		48FC69B22907964A00BD0CB8 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
+		48FC69B4290796C000BD0CB8 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 		48FC6993290793BA00BD0CB8 /* MovieList */ = {
 			isa = PBXGroup;
 			children = (
+				48FC69B02907963900BD0CB8 /* View */,
 				48FC69AD2907956D00BD0CB8 /* Model */,
 				48FC69A8290794E200BD0CB8 /* Extensions */,
 				48FC6994290793BA00BD0CB8 /* AppDelegate.swift */,
@@ -77,6 +82,7 @@
 			children = (
 				48FC69A9290794ED00BD0CB8 /* UIColor+.swift */,
 				48FC69AB2907950900BD0CB8 /* UIView+.swift */,
+				48FC69B4290796C000BD0CB8 /* String+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -87,6 +93,22 @@
 				48FC69AE2907957400BD0CB8 /* Movie.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		48FC69B02907963900BD0CB8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				48FC69B12907963D00BD0CB8 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		48FC69B12907963D00BD0CB8 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				48FC69B22907964A00BD0CB8 /* MovieTableViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +183,8 @@
 			files = (
 				48FC6999290793BA00BD0CB8 /* HomeViewController.swift in Sources */,
 				48FC69AA290794ED00BD0CB8 /* UIColor+.swift in Sources */,
+				48FC69B5290796C000BD0CB8 /* String+.swift in Sources */,
+				48FC69B32907964A00BD0CB8 /* MovieTableViewCell.swift in Sources */,
 				48FC69AF2907957400BD0CB8 /* Movie.swift in Sources */,
 				48FC6995290793BA00BD0CB8 /* AppDelegate.swift in Sources */,
 				48FC6997290793BA00BD0CB8 /* SceneDelegate.swift in Sources */,

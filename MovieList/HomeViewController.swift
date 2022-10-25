@@ -24,6 +24,7 @@ class HomeViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.backgroundColor = .clear
+        tableView.register(MovieTableViewCell.self, forCellReuseIdentifier: "movieCell")
         tableView.separatorStyle = .none
         return tableView
     }()
@@ -53,11 +54,12 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
-        cell.textLabel?.text = movies[indexPath.row].title
-        cell.backgroundColor = .clear
-        cell.textLabel?.textColor = .white
-        return cell
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "movieCell") as? MovieTableViewCell {
+            cell.selectionStyle = .none
+            cell.configureCell(movie: movies[indexPath.row])
+                return cell
+            }
+       return UITableViewCell()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
