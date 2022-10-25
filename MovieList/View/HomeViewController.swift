@@ -52,6 +52,7 @@ class HomeViewController: UIViewController {
     }
     
     private func setLayout() {
+        navigationItem.backButtonTitle = "Voltar"
         view.addSubview(titleView)
         view.addSubview(tableView)
         
