@@ -74,7 +74,6 @@
 				48FC69A8290794E200BD0CB8 /* Extensions */,
 				48FC6994290793BA00BD0CB8 /* AppDelegate.swift */,
 				48FC6996290793BA00BD0CB8 /* SceneDelegate.swift */,
-				48FC6998290793BA00BD0CB8 /* HomeViewController.swift */,
 				48FC699D290793BA00BD0CB8 /* Assets.xcassets */,
 				48FC699F290793BA00BD0CB8 /* LaunchScreen.storyboard */,
 				48FC69A2290793BA00BD0CB8 /* Info.plist */,
@@ -104,6 +103,7 @@
 		48FC69B02907963900BD0CB8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				48FC6998290793BA00BD0CB8 /* HomeViewController.swift */,
 				48FC69B12907963D00BD0CB8 /* Cell */,
 			);
 			path = View;
