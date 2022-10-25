@@ -14,6 +14,7 @@ class MovieDetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.setBackground()
+        setLayout()
         // Do any additional setup after loading the view.
     }
     
@@ -24,5 +25,9 @@ class MovieDetailsViewController: UIViewController {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    private func setLayout() {
+        navigationController?.navigationBar.tintColor = UIColor.white
     }
 }
