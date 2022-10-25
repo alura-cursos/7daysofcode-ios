@@ -9,6 +9,15 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
+    private var requestNetworking = Network()
+    private var movies: [Movie] = [] {
+        didSet {
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+        }
+    }
+    
     private lazy var titleView: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -33,6 +42,13 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         view.setBackground()
         setLayout()
+        getPopularMovies()
+    }
+    
+    private func getPopularMovies() {
+        requestNetworking.fetchPopularMovies { movies in
+            self.movies = movies
+        }
     }
     
     private func setLayout() {
